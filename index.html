@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Authenticator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Authenticator</h1>
+        <form id="auth-form">
+            <label for="secret">Secret Key:</label>
+            <input type="text" id="secret" required>
+            <button type="submit">Generate OTP</button>
+        </form>
+        <div id="otp-display" class="otp-display"></div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jssha@3.2.0/dist/sha.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
